@@ -1,0 +1,142 @@
+*:hover,
+*:focus {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+body h2 {
+  text-align: center;
+}
+body .icon {
+  max-width: 24px;
+}
+body section#portfolio .works .wrapperInner {
+  display: block;
+  margin-bottom: 1em;
+  box-shadow: 0 0 0 1px #999;
+}
+@media (min-width: 576px) {
+  body section#portfolio .works .wrapperInner {
+    cursor: pointer;
+  }
+}
+body section#portfolio .works .wrapperInner .wrapperImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+}
+body section#portfolio .works .wrapperInner .wrapperImg img {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  body section#portfolio .works .wrapperInner .wrapperImg img {
+    display: none;
+  }
+}
+body section#portfolio .works .focusDiv .wrapperInner {
+  cursor: default;
+}
+body section#about ul,
+body section#about ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body section#contact label {
+  display: block;
+}
+body section#contact input[type="text"],
+body section#contact input[type="email"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+body section#contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  resize: none;
+}
+body #scrollTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+#workOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.666);
+  z-index: 2;
+}
+#workOverlay .wrapperOuter {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  display: block;
+  height: auto;
+}
+#workOverlay .wrapperOuter .btnClose {
+  position: absolute;
+  z-index: 4;
+  top: 0.333em;
+  right: 0.333em;
+  background: transparent;
+  font-size: 2em;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.666);
+}
+#workOverlay .wrapperOuter .btnClose:hover,
+#workOverlay .wrapperOuter .btnClose:focus {
+  color: #fff;
+}
+#workOverlay .wrapperOuter .btnClose i {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+#workOverlay .wrapperOuter .wrapperInner .wrapperImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+}
+@media (min-width: 576px) {
+  #workOverlay .wrapperOuter .wrapperInner .wrapperImg {
+    width: 500px;
+    height: 314px;
+  }
+}
+@media (min-width: 768px) {
+  #workOverlay .wrapperOuter .wrapperInner .wrapperImg {
+    width: 612px;
+    height: 384px;
+  }
+}
+@media (min-width: 992px) {
+  #workOverlay .wrapperOuter .wrapperInner .wrapperImg {
+    width: 796px;
+    height: 500px;
+  }
+}
