@@ -1,0 +1,11 @@
+footer > div .row {
+  padding: 2em;
+}
+footer > div .row a,
+footer > div .row span {
+  margin: 0 1em;
+  font-size: 0.75em;
+}
+footer > div .row a i {
+  margin-right: 4px;
+}

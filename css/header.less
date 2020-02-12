@@ -1,0 +1,27 @@
+@import "variables.less";
+header {
+  .navbar {
+    @media (min-width: @minWidth) {
+      @paddingVal: 3rem;
+      padding-top: @paddingVal;
+      padding-bottom: @paddingVal;
+    }
+    .navbar-brand {
+      @media (min-width: @minWidth) {
+        position: absolute;
+        @centerHorz();
+        &,
+        img {
+          margin: 0;
+          padding: 0;
+          width: 96px;
+        }
+      }
+      img {
+        @radius: 50%;
+        -webkit-border-radius: @radius;
+        border-radius: @radius;
+      }
+    }
+  }
+}

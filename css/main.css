@@ -1,28 +1,41 @@
-*:hover,
-*:focus {
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
+@media (min-width: 576px) {
+  header .navbar {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
-body h2 {
-  text-align: center;
+@media (min-width: 576px) {
+  header .navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  header .navbar .navbar-brand,
+  header .navbar .navbar-brand img {
+    margin: 0;
+    padding: 0;
+    width: 96px;
+  }
 }
-body .icon {
-  max-width: 24px;
+header .navbar .navbar-brand img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
-body section#portfolio .works .wrapperInner {
+section#portfolio .works .wrapperInner {
   display: block;
   margin-bottom: 1em;
   box-shadow: 0 0 0 1px #999;
 }
 @media (min-width: 576px) {
-  body section#portfolio .works .wrapperInner {
+  section#portfolio .works .wrapperInner {
     cursor: pointer;
   }
 }
-body section#portfolio .works .wrapperInner .wrapperImg {
+section#portfolio .works .wrapperInner .wrapperImg {
   display: block;
   width: 100%;
   height: auto;
@@ -31,42 +44,16 @@ body section#portfolio .works .wrapperInner .wrapperImg {
   background-position: center;
   background-color: #ccc;
 }
-body section#portfolio .works .wrapperInner .wrapperImg img {
+section#portfolio .works .wrapperInner .wrapperImg img {
   width: 100%;
 }
 @media (min-width: 576px) {
-  body section#portfolio .works .wrapperInner .wrapperImg img {
+  section#portfolio .works .wrapperInner .wrapperImg img {
     display: none;
   }
 }
-body section#portfolio .works .focusDiv .wrapperInner {
+section#portfolio .works .focusDiv .wrapperInner {
   cursor: default;
-}
-body section#about ul,
-body section#about ul li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-body section#contact label {
-  display: block;
-}
-body section#contact input[type="text"],
-body section#contact input[type="email"] {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 0;
-}
-body section#contact textarea {
-  border: 1px solid #ccc;
-  border-radius: 0;
-  resize: none;
-}
-body #scrollTop {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
 }
 #workOverlay {
   display: none;
@@ -139,4 +126,56 @@ body #scrollTop {
     width: 796px;
     height: 500px;
   }
+}
+.icon {
+  max-width: 24px;
+}
+section#about ul,
+section#about ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+section#contact label {
+  display: block;
+}
+section#contact input[type="text"],
+section#contact input[type="email"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+section#contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  resize: none;
+}
+footer > div .row {
+  padding: 2em;
+}
+footer > div .row a,
+footer > div .row span {
+  margin: 0 1em;
+  font-size: 0.75em;
+}
+footer > div .row a i {
+  margin-right: 4px;
+}
+s *:hover,
+s *:focus {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+#scrollTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
 }

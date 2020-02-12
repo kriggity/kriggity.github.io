@@ -1,0 +1,27 @@
+@media (min-width: 576px) {
+  header .navbar {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 576px) {
+  header .navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  header .navbar .navbar-brand,
+  header .navbar .navbar-brand img {
+    margin: 0;
+    padding: 0;
+    width: 96px;
+  }
+}
+header .navbar .navbar-brand img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}

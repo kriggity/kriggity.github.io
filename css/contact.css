@@ -1,0 +1,14 @@
+section#contact label {
+  display: block;
+}
+section#contact input[type="text"],
+section#contact input[type="email"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+section#contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  resize: none;
+}

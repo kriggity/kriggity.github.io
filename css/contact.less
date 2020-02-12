@@ -1,0 +1,23 @@
+@import 'variables.less';
+section {
+  &#contact {
+    label {
+      display: block;
+    }
+    @inputStyles: {
+      border: 1px solid #ccc;
+      border-radius: 0;
+    };
+    input {
+      &[type="text"],
+      &[type="email"] {
+        width: 100%;
+        @inputStyles();
+      }
+    }
+    textarea {
+      @inputStyles();
+      resize: none;
+    }
+  }
+}

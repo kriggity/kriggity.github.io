@@ -1,0 +1,30 @@
+section#portfolio .works .wrapperInner {
+  display: block;
+  margin-bottom: 1em;
+  box-shadow: 0 0 0 1px #999;
+}
+@media (min-width: 576px) {
+  section#portfolio .works .wrapperInner {
+    cursor: pointer;
+  }
+}
+section#portfolio .works .wrapperInner .wrapperImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+}
+section#portfolio .works .wrapperInner .wrapperImg img {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  section#portfolio .works .wrapperInner .wrapperImg img {
+    display: none;
+  }
+}
+section#portfolio .works .focusDiv .wrapperInner {
+  cursor: default;
+}

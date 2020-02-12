@@ -1,0 +1,74 @@
+@import 'variables.less';
+#workOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.666);
+  z-index: 2;
+  .wrapperOuter {
+    position: absolute;
+    z-index: 3;
+    @centerVertHorz();
+    background-color: #fff;
+    display: block;
+    height: auto;
+    .btnClose {
+      position: absolute;
+      z-index: 4;
+      top: 0.333em;
+      right: 0.333em;
+      background: transparent;
+      font-size: 2em;
+      border: none;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      color: rgba(255, 255, 255, 0.666);
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+      i {
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+      }
+    }
+    .wrapperInner {
+      .wrapperImg {
+        @width: 500px;
+        display: block;
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #ccc;
+        @media (min-width: 576px) {
+          width: @width;
+          height: @width * 0.628;
+        }
+        @media (min-width: 768px) {
+          width: 612px;
+          height: 384px;
+        }
+        @media (min-width: 992px) {
+          width: 796px;
+          height: 500px;
+        }
+        // @media (min-width: 1200px) {
+        //   width: 796px;
+        //   height: 500px;
+        // }
+      }
+      .title {
+      }
+      .description {
+      }
+      .linkOut {
+      }
+    }
+  }
+}

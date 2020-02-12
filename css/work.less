@@ -1,0 +1,35 @@
+@import 'variables.less';
+section {
+  &#portfolio {
+    .works {
+      .wrapperInner {
+        @media (min-width: 576px) {
+          cursor: pointer;
+        }
+        display: block;
+        margin-bottom: 1em;
+        box-shadow: 0 0 0 1px #999;
+        .wrapperImg {
+          display: block;
+          width: 100%;
+          height: auto;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #ccc;
+          // box-shadow:0 0 0 1px #999;
+          img {
+            width: 100%;
+            @media (min-width: 576px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .focusDiv .wrapperInner {
+        cursor: default;
+      }
+    }
+  }
+}
