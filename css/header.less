@@ -37,6 +37,30 @@ header {
         }
         text-transform: uppercase;
         letter-spacing: 1px;
+        a.nav-link {
+          position: relative;
+          &:after {
+            content: "";
+            width: 0;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transition: all 100ms ease;
+            -moz-transition: all 100ms ease;
+            -ms-transition: all 100ms ease;
+            -o-transition: all 100ms ease;
+            transition: all 100ms ease;
+          }
+          &:hover,
+          &:focus {
+            &:after {
+              width: 66%;
+            }
+          }
+        }
       }
     }
     .navbar-toggler {
@@ -63,6 +87,11 @@ header {
         border-radius: @radius;
         border: @border;
         padding: 4px;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
         &:hover,
         &:focus {
           border-color: #000;
