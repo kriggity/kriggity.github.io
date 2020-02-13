@@ -1,8 +1,146 @@
+@import "baseline.type.css";
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNwE44TYFv.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwOIpWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf) format('truetype');
+}
+h1 {
+  font-family: "Roboto Slab", serif;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  background-image: url("../assets/map.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header:after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+header .navbar,
+header .container {
+  position: relative;
+  z-index: 1;
+}
+header .navbar {
+  background-image: url("../assets/bg-tile.png");
+  background-repeat: repeat;
+  border-bottom: 1px solid #ccc;
+}
 @media (min-width: 576px) {
   header .navbar {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+}
+header .navbar .navbar-nav {
+  margin: 0;
+  top: 0;
+  margin-left: 8px;
+}
+header .navbar .navbar-nav li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header .navbar .navbar-nav li:nth-child(1) {
+  margin-right: 140px;
+}
+header .navbar .navbar-toggler {
+  border: 1px solid #7f7f7f;
 }
 @media (min-width: 576px) {
   header .navbar .navbar-brand {
@@ -13,7 +151,14 @@
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    z-index: 5;
   }
+}
+header .navbar .navbar-brand,
+header .navbar .navbar-brand img {
+  width: 64px;
+}
+@media (min-width: 576px) {
   header .navbar .navbar-brand,
   header .navbar .navbar-brand img {
     margin: 0;
@@ -24,6 +169,61 @@
 header .navbar .navbar-brand img {
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+header .navbar .navbar-brand img:hover,
+header .navbar .navbar-brand img:focus {
+  border-color: #000;
+}
+header .container {
+  padding: 1em 0;
+}
+@media (min-width: 576px) {
+  header .container {
+    padding: 10em 0;
+  }
+}
+header .container .row h1,
+header .container .row h2,
+header .container .row h3 {
+  margin: 0;
+  padding: 0;
+}
+header .container .row h1 {
+  font-weight: 400;
+  color: #373329;
+}
+header .container .row h2 {
+  margin: 1em 0;
+}
+header .container .row h3 {
+  line-height: 1.2;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  header .container .row h3 {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 769px) {
+  header .container .row h3 {
+    font-size: 22px;
+  }
+}
+section {
+  padding: 1em 0;
+  border-top: 1px solid #ccc;
+}
+@media (min-width: 576px) {
+  section {
+    padding: 4em 0 5em;
+  }
+}
+section h2 {
+  font-weight: 400;
+  margin-bottom: 1.333em;
 }
 section#portfolio .works .wrapperInner {
   display: block;
@@ -51,6 +251,28 @@ section#portfolio .works .wrapperInner .wrapperImg img {
   section#portfolio .works .wrapperInner .wrapperImg img {
     display: none;
   }
+}
+section#portfolio .works .wrapperInner h3 {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  top: 0;
+  line-height: 1.1;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding: 8px;
+}
+section#portfolio .works .wrapperInner p,
+section#portfolio .works .wrapperInner a {
+  display: block;
+  top: 0;
+  line-height: 1.1;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding: 8px;
+}
+section#portfolio .works .wrapperInner p {
+  display: none !important;
 }
 section#portfolio .works .focusDiv .wrapperInner {
   cursor: default;
@@ -127,14 +349,93 @@ section#portfolio .works .focusDiv .wrapperInner {
     height: 500px;
   }
 }
+#workOverlay .wrapperOuter .wrapperInner h3 {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  top: 0;
+  line-height: 1.1;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding: 8px;
+}
+#workOverlay .wrapperOuter .wrapperInner p,
+#workOverlay .wrapperOuter .wrapperInner a {
+  display: block;
+  top: 0;
+  line-height: 1.1;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding: 8px;
+}
+#workOverlay .wrapperOuter .wrapperInner p {
+  display: none !important;
+}
 .icon {
-  max-width: 24px;
+  max-width: 64px;
+}
+section#about {
+  background-color: #fff9eb;
+  padding-bottom: 0;
+}
+section#about h3,
+section#about h4 {
+  text-align: center;
+}
+section#about h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+section#about h4 {
+  font-weight: 300;
+}
+section#about #skills,
+section#about #interestingFacts {
+  padding-bottom: 2em;
+}
+section#about ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5em;
+  padding-bottom: 5em;
+  border-bottom: 1px solid #ccc;
 }
 section#about ul,
 section#about ul li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media (min-width: 576px) {
+  section#about ul {
+    margin-bottom: 2.5em;
+    padding-bottom: 2.5em;
+  }
+}
+section#about ul li {
+  margin: 0 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+section#about ul li .icon {
+  display: block;
+  margin: 0 auto;
+}
+section#about ul#education li,
+section#about ul#interestetingFacts li {
+  margin-bottom: 2em;
+}
+@media (min-width: 576px) {
+  section#about ul#education li,
+  section#about ul#interestetingFacts li {
+    margin-bottom: 0;
+  }
+}
+section#about ul#education {
+  border-bottom: none;
 }
 section#contact label {
   display: block;
@@ -150,19 +451,23 @@ section#contact textarea {
   border-radius: 0;
   resize: none;
 }
+footer {
+  background-image: url("../assets/bg-tile.png");
+  background-repeat: repeat;
+  border-top: 1px solid #ccc;
+}
 footer > div .row {
   padding: 2em;
 }
 footer > div .row a,
 footer > div .row span {
   margin: 0 1em;
-  font-size: 0.75em;
 }
 footer > div .row a i {
   margin-right: 4px;
 }
-s *:hover,
-s *:focus {
+*:hover,
+*:focus {
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -178,4 +483,10 @@ s *:focus {
 a:hover,
 a:focus {
   text-decoration: none;
+}
+section h2 {
+  text-align: center;
+}
+body {
+  color: #2a2720;
 }

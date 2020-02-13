@@ -1,5 +1,14 @@
-@import 'variables.less';
+@import "variables.less";
 section {
+  padding: 1em 0;
+  @media (min-width: @minWidth) {
+    padding: 4em 0 5em;
+  }
+  border-top: 1px solid #ccc;
+  h2 {
+    font-weight: 400;
+    margin-bottom: 1.333em;
+  }
   &#portfolio {
     .works {
       .wrapperInner {
@@ -25,6 +34,26 @@ section {
             }
           }
         }
+        h3 {
+          font-size: 16px;
+          font-weight: 400;
+          display: block;
+          top: 0;
+          line-height: 1.1;
+          margin-block-end: 0;
+          margin-block-start: 0;
+          padding: 8px;
+        }
+        p,
+        a {
+          display: block;
+          top: 0;
+          line-height: 1.1;
+          margin-block-end: 0;
+          margin-block-start: 0;
+          padding: 8px;
+        }
+        p {display:none !important;}
       }
 
       .focusDiv .wrapperInner {

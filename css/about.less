@@ -1,15 +1,68 @@
-@import 'variables.less';
+@import "variables.less";
 .icon {
-  max-width: 24px;
+  max-width: 64px;
 }
 section {
   &#about {
+    background-color: #fff9eb;
+    padding-bottom: 0;
+    h3,
+    h4 {
+      text-align: center;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 24px;
+    }
+    h4 {
+      font-weight: 300;
+    }
+    #skills,
+    #interestingFacts {
+      padding-bottom: 2em;
+    }
     ul {
       &,
       li {
         margin: 0;
         padding: 0;
         list-style: none;
+      }
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      //   justify-content: space-evenly;
+      @bottomVal: 5em;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: @bottomVal;
+      padding-bottom: @bottomVal;
+      border-bottom: @border;
+      @media (min-width: @minWidth) {
+        margin-bottom: @bottomVal / 2;
+        padding-bottom: @bottomVal / 2;
+      }
+      li {
+        margin: 0 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        .icon {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      &#education,
+      &#interestetingFacts {
+        li {
+          margin-bottom: 2em;
+          @media (min-width: @minWidth) {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &#education {
+        border-bottom: none;
       }
     }
   }

@@ -1,17 +1,57 @@
 @import "variables.less";
 header {
+  background-image: url("../assets/map.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  &:after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .navbar,
+  .container {
+    position: relative;
+    z-index: 1;
+  }
   .navbar {
+    background-image: url("../assets/bg-tile.png");
+    background-repeat: repeat;
+    border-bottom: @border;
     @media (min-width: @minWidth) {
       @paddingVal: 3rem;
       padding-top: @paddingVal;
       padding-bottom: @paddingVal;
     }
+    .navbar-nav {
+      margin: 0;
+      top: 0;
+      margin-left: 8px;
+      li {
+        &:nth-child(1) {
+          margin-right: 140px;
+        }
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+    .navbar-toggler {
+      border: 1px solid rgb(127, 127, 127);
+    }
     .navbar-brand {
       @media (min-width: @minWidth) {
         position: absolute;
         @centerHorz();
-        &,
-        img {
+        z-index: 5;
+      }
+      &,
+      img {
+        width: 64px;
+        @media (min-width: @minWidth) {
           margin: 0;
           padding: 0;
           width: 96px;
@@ -21,6 +61,44 @@ header {
         @radius: 50%;
         -webkit-border-radius: @radius;
         border-radius: @radius;
+        border: @border;
+        padding: 4px;
+        &:hover,
+        &:focus {
+          border-color: #000;
+        }
+      }
+    }
+  }
+  .container {
+    padding: 1em 0;
+    @media (min-width: @minWidth) {
+      padding: 10em 0;
+    }
+    .row {
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-weight: 400;
+        color: #373329;
+      }
+      h2 {
+        margin: 1em 0;
+      }
+      h3 {
+        line-height: 1.2;
+        font-size: 14px;
+        @media (min-width: @minWidth) {
+          font-size: 16px;
+          margin-bottom: 1em;
+        }
+        @media (min-width: 769px) {
+          font-size: 22px;
+        }
       }
     }
   }

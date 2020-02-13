@@ -1,8 +1,145 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNwE44TYFv.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwOIpWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v11/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf) format('truetype');
+}
+h1 {
+  font-family: "Roboto Slab", serif;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+header {
+  background-image: url("../assets/map.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header:after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+header .navbar,
+header .container {
+  position: relative;
+  z-index: 1;
+}
+header .navbar {
+  background-image: url("../assets/bg-tile.png");
+  background-repeat: repeat;
+  border-bottom: 1px solid #ccc;
+}
 @media (min-width: 576px) {
   header .navbar {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+}
+header .navbar .navbar-nav {
+  margin: 0;
+  top: 0;
+  margin-left: 8px;
+}
+header .navbar .navbar-nav li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+header .navbar .navbar-nav li:nth-child(1) {
+  margin-right: 140px;
+}
+header .navbar .navbar-toggler {
+  border: 1px solid #7f7f7f;
 }
 @media (min-width: 576px) {
   header .navbar .navbar-brand {
@@ -13,7 +150,14 @@
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    z-index: 5;
   }
+}
+header .navbar .navbar-brand,
+header .navbar .navbar-brand img {
+  width: 64px;
+}
+@media (min-width: 576px) {
   header .navbar .navbar-brand,
   header .navbar .navbar-brand img {
     margin: 0;
@@ -24,4 +168,46 @@
 header .navbar .navbar-brand img {
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+header .navbar .navbar-brand img:hover,
+header .navbar .navbar-brand img:focus {
+  border-color: #000;
+}
+header .container {
+  padding: 1em 0;
+}
+@media (min-width: 576px) {
+  header .container {
+    padding: 10em 0;
+  }
+}
+header .container .row h1,
+header .container .row h2,
+header .container .row h3 {
+  margin: 0;
+  padding: 0;
+}
+header .container .row h1 {
+  font-weight: 400;
+  color: #373329;
+}
+header .container .row h2 {
+  margin: 1em 0;
+}
+header .container .row h3 {
+  line-height: 1.2;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  header .container .row h3 {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 769px) {
+  header .container .row h3 {
+    font-size: 22px;
+  }
 }
