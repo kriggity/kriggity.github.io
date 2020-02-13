@@ -262,6 +262,14 @@ section#portfolio .works .wrapperInner {
     cursor: pointer;
   }
 }
+section#portfolio .works .wrapperInner:hover,
+section#portfolio .works .wrapperInner:focus {
+  box-shadow: 0 0 1px #000;
+}
+section#portfolio .works .wrapperInner:hover h3,
+section#portfolio .works .wrapperInner:focus h3 {
+  color: #000;
+}
 section#portfolio .works .wrapperInner .wrapperImg {
   display: block;
   width: 100%;
